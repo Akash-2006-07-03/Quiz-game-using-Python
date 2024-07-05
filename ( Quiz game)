@@ -1,0 +1,46 @@
+'''project for computer quiz'''
+print("Welcome to computer quiz!")
+choice=input("Do you want to play the game? ")
+if choice.lower()!='yes':
+    quit()
+
+print("ok let's play the game")
+score=0
+
+answer=input("what does cpu stands for? ")
+if answer.lower()=='central processing unit':
+    print("correct!")
+    score+=1
+else:
+    print("Incorrect!")
+
+answer=input("what does ram stands for? ")
+if answer.lower()=='random access memory':
+    print("Correct!")
+    score+=1
+else:
+    print("Incorrect")
+
+answer=input("who is the PM of India? ")
+if answer.lower()=='narendra modi':
+    print("correct!")
+    score+=1
+else:
+    print("Incorrect!")
+
+answer=input("who is the CM of Tamil Nadu? ")
+if answer.lower()=='stalin':
+    print("correct!")
+    score+=1
+else:
+    print("Incorrect!")
+
+answer=input("what does GPU stands for? ")
+if answer.lower()=='graphics processing unit':
+    print("correct!")
+    score+=1
+else:
+    print("Incorrect!")
+
+print("You answered " +str(score)+ " questions correctly")
+print("your score is " +str(((score/5)*100))+ "%." )
